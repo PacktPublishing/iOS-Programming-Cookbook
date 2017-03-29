@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060954821D41140100360E75 /* Cruze.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 060954811D41140100360E75 /* Cruze.pdf */; };
+		062CFA0B1D3F638300AFEC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062CFA0A1D3F638300AFEC22 /* Assets.xcassets */; };
+		062CFA121D3F638300AFEC22 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 062CFA111D3F638300AFEC22 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		062CFA171D3F638300AFEC22 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062CFA161D3F638300AFEC22 /* Messages.framework */; };
+		062CFA1A1D3F638300AFEC22 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CFA191D3F638300AFEC22 /* MessagesViewController.swift */; };
+		062CFA1D1D3F638300AFEC22 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062CFA1B1D3F638300AFEC22 /* MainInterface.storyboard */; };
+		062CFA1F1D3F638300AFEC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062CFA1E1D3F638300AFEC22 /* Assets.xcassets */; };
+		751AFBC6CFFBF00A868FF254 /* Pods_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6673B089DBE68E1B5D51F36C /* Pods_MessagesExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		062CFA131D3F638300AFEC22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 062CFA011D3F638300AFEC22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 062CFA101D3F638300AFEC22;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		062CFA261D3F638300AFEC22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				062CFA121D3F638300AFEC22 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		060954811D41140100360E75 /* Cruze.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Cruze.pdf; sourceTree = "<group>"; };
+		062CFA071D3F638300AFEC22 /* PDFPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		062CFA0A1D3F638300AFEC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		062CFA0C1D3F638300AFEC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062CFA111D3F638300AFEC22 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		062CFA161D3F638300AFEC22 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		062CFA191D3F638300AFEC22 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		062CFA1C1D3F638300AFEC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		062CFA1E1D3F638300AFEC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		062CFA201D3F638300AFEC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6673B089DBE68E1B5D51F36C /* Pods_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01F8A8E0F91172930102E72 /* Pods-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E5E9E6FFCA1C2F3A39CD5822 /* Pods-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		062CFA0E1D3F638300AFEC22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062CFA171D3F638300AFEC22 /* Messages.framework in Frameworks */,
+				751AFBC6CFFBF00A868FF254 /* Pods_MessagesExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062CFA001D3F638300AFEC22 = {
+			isa = PBXGroup;
+			children = (
+				062CFA091D3F638300AFEC22 /* PDFPicker */,
+				062CFA181D3F638300AFEC22 /* MessagesExtension */,
+				062CFA151D3F638300AFEC22 /* Frameworks */,
+				062CFA081D3F638300AFEC22 /* Products */,
+				C0E748086DD162F67EDB5446 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		062CFA081D3F638300AFEC22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				062CFA071D3F638300AFEC22 /* PDFPicker.app */,
+				062CFA111D3F638300AFEC22 /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		062CFA091D3F638300AFEC22 /* PDFPicker */ = {
+			isa = PBXGroup;
+			children = (
+				062CFA0A1D3F638300AFEC22 /* Assets.xcassets */,
+				062CFA0C1D3F638300AFEC22 /* Info.plist */,
+			);
+			path = PDFPicker;
+			sourceTree = "<group>";
+		};
+		062CFA151D3F638300AFEC22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062CFA161D3F638300AFEC22 /* Messages.framework */,
+				6673B089DBE68E1B5D51F36C /* Pods_MessagesExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		062CFA181D3F638300AFEC22 /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				062CFA191D3F638300AFEC22 /* MessagesViewController.swift */,
+				062CFA1B1D3F638300AFEC22 /* MainInterface.storyboard */,
+				060954811D41140100360E75 /* Cruze.pdf */,
+				062CFA1E1D3F638300AFEC22 /* Assets.xcassets */,
+				062CFA201D3F638300AFEC22 /* Info.plist */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		C0E748086DD162F67EDB5446 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E9E6FFCA1C2F3A39CD5822 /* Pods-MessagesExtension.debug.xcconfig */,
+				A01F8A8E0F91172930102E72 /* Pods-MessagesExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		062CFA061D3F638300AFEC22 /* PDFPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062CFA271D3F638300AFEC22 /* Build configuration list for PBXNativeTarget "PDFPicker" */;
+			buildPhases = (
+				062CFA051D3F638300AFEC22 /* Resources */,
+				062CFA261D3F638300AFEC22 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				062CFA141D3F638300AFEC22 /* PBXTargetDependency */,
+			);
+			name = PDFPicker;
+			productName = PDFPicker;
+			productReference = 062CFA071D3F638300AFEC22 /* PDFPicker.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		062CFA101D3F638300AFEC22 /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 062CFA231D3F638300AFEC22 /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				4F1CBBA99F4D443D1A664277 /* Check Pods Manifest.lock */,
+				062CFA0D1D3F638300AFEC22 /* Sources */,
+				062CFA0E1D3F638300AFEC22 /* Frameworks */,
+				062CFA0F1D3F638300AFEC22 /* Resources */,
+				3CE8C2FAF654CE0C204157F4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 062CFA111D3F638300AFEC22 /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		062CFA011D3F638300AFEC22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Hossam Ghareeb";
+				TargetAttributes = {
+					062CFA061D3F638300AFEC22 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KL7BN458FX;
+						DevelopmentTeamName = "Hossam Ghareeb (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					062CFA101D3F638300AFEC22 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KL7BN458FX;
+						DevelopmentTeamName = "Hossam Ghareeb (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 062CFA041D3F638300AFEC22 /* Build configuration list for PBXProject "PDFPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 062CFA001D3F638300AFEC22;
+			productRefGroup = 062CFA081D3F638300AFEC22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				062CFA061D3F638300AFEC22 /* PDFPicker */,
+				062CFA101D3F638300AFEC22 /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		062CFA051D3F638300AFEC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062CFA0B1D3F638300AFEC22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		062CFA0F1D3F638300AFEC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062CFA1F1D3F638300AFEC22 /* Assets.xcassets in Resources */,
+				062CFA1D1D3F638300AFEC22 /* MainInterface.storyboard in Resources */,
+				060954821D41140100360E75 /* Cruze.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CE8C2FAF654CE0C204157F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MessagesExtension/Pods-MessagesExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1CBBA99F4D443D1A664277 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		062CFA0D1D3F638300AFEC22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062CFA1A1D3F638300AFEC22 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		062CFA141D3F638300AFEC22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 062CFA101D3F638300AFEC22 /* MessagesExtension */;
+			targetProxy = 062CFA131D3F638300AFEC22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		062CFA1B1D3F638300AFEC22 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				062CFA1C1D3F638300AFEC22 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		062CFA211D3F638300AFEC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		062CFA221D3F638300AFEC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		062CFA241D3F638300AFEC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E9E6FFCA1C2F3A39CD5822 /* Pods-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hossam.PDFPicker.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		062CFA251D3F638300AFEC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01F8A8E0F91172930102E72 /* Pods-MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hossam.PDFPicker.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		062CFA281D3F638300AFEC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PDFPicker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = hossam.PDFPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		062CFA291D3F638300AFEC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PDFPicker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = hossam.PDFPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		062CFA041D3F638300AFEC22 /* Build configuration list for PBXProject "PDFPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062CFA211D3F638300AFEC22 /* Debug */,
+				062CFA221D3F638300AFEC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062CFA231D3F638300AFEC22 /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062CFA241D3F638300AFEC22 /* Debug */,
+				062CFA251D3F638300AFEC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		062CFA271D3F638300AFEC22 /* Build configuration list for PBXNativeTarget "PDFPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				062CFA281D3F638300AFEC22 /* Debug */,
+				062CFA291D3F638300AFEC22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 062CFA011D3F638300AFEC22 /* Project object */;
+}

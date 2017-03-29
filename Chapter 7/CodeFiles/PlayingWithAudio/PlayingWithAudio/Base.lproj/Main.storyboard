@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayingWithAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4j-yx-KCB">
+                                <color key="backgroundColor" red="0.39607843139999999" green="0.2901960784" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="2gY-UU-KvT"/>
+                                    <constraint firstAttribute="width" constant="131" id="Tmc-VH-kj7"/>
+                                </constraints>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickOnPlayAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNB-Y1-I6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HD5-PQ-1fb" userLabel="Record">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="5vy-g9-Ogo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickOnRecordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RjE-ov-h0c"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-6a-TDS">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Ljh-6v-BAm"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HD5-PQ-1fb" secondAttribute="bottom" constant="8" id="Gtg-fH-0jb"/>
+                            <constraint firstItem="P4j-yx-KCB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEz-3i-KMN"/>
+                            <constraint firstItem="4t4-6a-TDS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="QR7-FR-wfH"/>
+                            <constraint firstItem="4t4-6a-TDS" firstAttribute="bottom" secondItem="HD5-PQ-1fb" secondAttribute="top" constant="-8" id="Zfw-1j-GWf"/>
+                            <constraint firstItem="HD5-PQ-1fb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-16" id="bT1-fg-CXP"/>
+                            <constraint firstAttribute="trailing" secondItem="4t4-6a-TDS" secondAttribute="trailing" constant="16" id="fhi-Xp-yUY"/>
+                            <constraint firstItem="P4j-yx-KCB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="jIA-fM-yjw"/>
+                            <constraint firstItem="HD5-PQ-1fb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qmG-mw-kRF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="P4j-yx-KCB" id="4ue-XB-JPn"/>
+                        <outlet property="recordButton" destination="HD5-PQ-1fb" id="Yek-dZ-scq"/>
+                        <outlet property="speechTextView" destination="4t4-6a-TDS" id="Fzb-1D-gcX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

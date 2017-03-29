@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageFilters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dubai.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HVO-tg-Cfw"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGu-Bq-dY5">
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QdR-sQ-WO7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dj0-iL-j2Z"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vGu-Bq-dY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3T7-OD-JrB"/>
+                            <constraint firstAttribute="trailing" secondItem="vGu-Bq-dY5" secondAttribute="trailing" id="MaT-BE-xsz"/>
+                            <constraint firstAttribute="bottom" secondItem="vGu-Bq-dY5" secondAttribute="bottom" id="OGI-9n-GM1"/>
+                            <constraint firstItem="HVO-tg-Cfw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pay-U0-X1M"/>
+                            <constraint firstAttribute="trailing" secondItem="HVO-tg-Cfw" secondAttribute="trailing" id="Zvc-ga-XqT"/>
+                            <constraint firstItem="HVO-tg-Cfw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bQb-os-CA1"/>
+                            <constraint firstItem="HVO-tg-Cfw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="h5A-QX-jQW"/>
+                            <constraint firstItem="vGu-Bq-dY5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="wJr-om-LTD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filtersPickerView" destination="vGu-Bq-dY5" id="njY-KO-bzm"/>
+                        <outlet property="imageView" destination="HVO-tg-Cfw" id="Q7s-T0-gD3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dubai.jpg" width="1200" height="1600"/>
+    </resources>
+</document>

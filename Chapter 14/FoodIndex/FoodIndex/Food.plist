@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+		<dict>
+			<key>title</key>
+			<string>Almond</string>
+			<key>calories</key>
+			<integer>165</integer>
+			<key>protein</key>
+			<integer>6</integer>
+			<key>fat</key>
+			<integer>15</integer>
+			<key>carbs</key>
+			<integer>6</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>DATES</string>
+			<key>calories</key>
+			<integer>230</integer>
+			<key>protein</key>
+			<integer>2</integer>
+			<key>fat</key>
+			<integer>0</integer>
+			<key>carbs</key>
+			<integer>61</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CHEESECAKE</string>
+			<key>calories</key>
+			<integer>3350</integer>
+			<key>protein</key>
+			<integer>60</integer>
+			<key>fat</key>
+			<integer>213</integer>
+			<key>carbs</key>
+			<integer>317</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>BROCCOLI</string>
+			<key>calories</key>
+			<integer>40</integer>
+			<key>protein</key>
+			<integer>4</integer>
+			<key>fat</key>
+			<integer>1</integer>
+			<key>carbs</key>
+			<integer>8</integer>
+		</dict>
+</array>
+</plist>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dfe-De-wqw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AJm-M5-tp3" userLabel="TableView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="Kjb-F5-kl1" customClass="FoodTableViewCell" customModule="TableViewDemo" customModuleProvider="target">
+                                        <frame key="frameInset" minY="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kjb-F5-kl1" id="iMx-U9-60E">
+                                            <frame key="frameInset" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sushi" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-KU-q3y" userLabel="FoodImage"/>
+                                                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpm-MW-Tdh" userLabel="Dim">
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkQ-yY-MAF">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nkQ-yY-MAF" firstAttribute="centerY" secondItem="iMx-U9-60E" secondAttribute="centerY" id="Cf4-Sn-UvZ"/>
+                                                <constraint firstItem="nkQ-yY-MAF" firstAttribute="centerX" secondItem="iMx-U9-60E" secondAttribute="centerX" id="DDB-xT-4rb"/>
+                                                <constraint firstItem="Dpm-MW-Tdh" firstAttribute="leading" secondItem="iMx-U9-60E" secondAttribute="leading" id="L3Y-1N-GZm"/>
+                                                <constraint firstItem="NKf-KU-q3y" firstAttribute="leading" secondItem="iMx-U9-60E" secondAttribute="leading" id="TkJ-Fq-INO"/>
+                                                <constraint firstAttribute="bottom" secondItem="NKf-KU-q3y" secondAttribute="bottom" id="WEu-ew-REm"/>
+                                                <constraint firstItem="Dpm-MW-Tdh" firstAttribute="top" secondItem="iMx-U9-60E" secondAttribute="top" id="YkI-hk-DCn"/>
+                                                <constraint firstAttribute="trailing" secondItem="NKf-KU-q3y" secondAttribute="trailing" id="f78-IS-kPl"/>
+                                                <constraint firstAttribute="bottom" secondItem="Dpm-MW-Tdh" secondAttribute="bottom" id="hfj-sc-8PW"/>
+                                                <constraint firstItem="NKf-KU-q3y" firstAttribute="top" secondItem="iMx-U9-60E" secondAttribute="top" id="oWY-Dq-n9q"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dpm-MW-Tdh" secondAttribute="trailing" id="yF2-kX-rD1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodImageView" destination="NKf-KU-q3y" id="29V-So-Vdq"/>
+                                            <outlet property="foodNameLabel" destination="nkQ-yY-MAF" id="BSt-3H-cY8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hki-a7-YfQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u0f-QR-BrJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AJm-M5-tp3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hew-Xi-YHm"/>
+                            <constraint firstItem="AJm-M5-tp3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JuO-WN-C5X"/>
+                            <constraint firstItem="AJm-M5-tp3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yxr-bd-lpc"/>
+                            <constraint firstItem="AJm-M5-tp3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="fN3-h5-jjz"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Table View Demo" id="c9y-Fd-ctI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jFo-S2-OZ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dfe-De-wqw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dYC-aP-0uV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C5z-eZ-Ff0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gE4-GE-j8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="-543.77811094452773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sushi" width="1024" height="768"/>
+    </resources>
+</document>

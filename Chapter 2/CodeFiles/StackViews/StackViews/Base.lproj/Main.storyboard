@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OFi-1X-6iR">
+                                <rect key="frame" x="20" y="20" width="280" height="426"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dubai1" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-Tv-7SQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="135"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dubai2" translatesAutoresizingMaskIntoConstraints="NO" id="e79-fw-dmh">
+                                        <rect key="frame" x="0.0" y="145" width="280" height="136"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dubai3" translatesAutoresizingMaskIntoConstraints="NO" id="6NN-XC-Kvz">
+                                        <rect key="frame" x="0.0" y="291" width="280" height="135"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OFi-1X-6iR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="MmT-ap-8Cb"/>
+                            <constraint firstAttribute="trailing" secondItem="OFi-1X-6iR" secondAttribute="trailing" constant="20" id="bTx-L0-tSa"/>
+                            <constraint firstItem="OFi-1X-6iR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" placeholder="YES" id="cUl-mL-U5j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OFi-1X-6iR" secondAttribute="bottom" constant="122" id="cwK-aO-vbg"/>
+                            <constraint firstItem="OFi-1X-6iR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oe1-hO-GsP"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dubai1" width="936" height="526"/>
+        <image name="Dubai2" width="1600" height="1000"/>
+        <image name="Dubai3" width="993" height="594"/>
+    </resources>
+</document>
